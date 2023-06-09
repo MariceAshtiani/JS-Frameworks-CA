@@ -1,17 +1,12 @@
-import { styled } from "styled-components";
+import Logo from "./Logo";
+import NavBar from "./Navbar";
+import StyledHeader from "./styled";
 
-const StyledHeader = styled.header`
-background-color: black;
-color: white;
-`
-
-export default function Header(props) {
-
+export default function Header() {
     return (
-    <StyledHeader>
-        {props.children}
-
-        <button>I'm the cart</button>
-    </StyledHeader>
-    )
-}
+        <StyledHeader>
+            <Logo />
+            <NavBar />
+        </StyledHeader>
+    );
+};

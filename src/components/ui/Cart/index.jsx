@@ -32,7 +32,7 @@ export default function Cart() {
                             {cartItems}
                             <div className="total"> Total : {FormatPrice(total)}</div>
                             <p className="shipping"> *Free shipping</p>
-                            <Link to="/checkout">
+                            <Link to="/Checkout">
                                 <BasicButton>Checkout</BasicButton>
                             </Link>
                         </div>

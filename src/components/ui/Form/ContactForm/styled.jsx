@@ -52,8 +52,17 @@ export default styled.form`
     }
 
     @media (max-width: ${({ theme }) => theme.mobile }) {
+        .input-group div {
+            display: block;
+        }
+        
         label {
             font-size: 1rem;
         }
+
+        input {
+            margin-top: 5px;
+        }
+       
     }
 `;

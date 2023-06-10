@@ -12,7 +12,7 @@ export default function ContactPage() {
         </HelmetProvider>
         <main>
             <StyledHeadline>
-                <h1>Contact</h1> 
+                Contact 
             </StyledHeadline>
             <div className="mainContainer">
                 <ContactForm />

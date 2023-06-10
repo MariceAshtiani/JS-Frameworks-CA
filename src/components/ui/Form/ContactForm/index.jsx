@@ -31,58 +31,60 @@ export default function ContactForm() {
             {isSubmitted && (
                 <h2 className="success">Thank you for you message! We will get back to you!</h2>
             )}
-            <div>
-                <label htmlFor="name">Full Name</label>
-                <input 
-                className="form-input"
-                onChange={handleChange}
-                type="text"
-                name="name"
-                value={formData.name}
-                placeholder="Full Name"
-                required
-                minLength={3}
-                />
+            
+            <div className="input-group">
+                <div>
+                    <label htmlFor="name">Full Name</label>
+                    <input 
+                    className="form-input"
+                    onChange={handleChange}
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    placeholder="Full Name"
+                    required
+                    minLength={3}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="name">Subject</label>
+                    <input 
+                    className="form-input"
+                    onChange={handleChange}
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
+                    placeholder="Subject"
+                    required 
+                    minLength={3}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="name">Email</label>
+                    <input 
+                    className="form-input"
+                    onChange={handleChange}
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    placeholder="Email"
+                    required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="name">Message</label>
+                    <textarea 
+                    className="form-input"
+                    onChange={handleChange}
+                    type="text"
+                    name="message"
+                    value={formData.message}
+                    placeholder="Message"
+                    required 
+                    minLength={3}
+                    />
+                </div>
             </div>
-            <div>
-                <label htmlFor="name">Subject</label>
-                <input 
-                className="form-input"
-                onChange={handleChange}
-                type="text"
-                name="subject"
-                value={formData.subject}
-                placeholder="Subject"
-                required 
-                minLength={3}
-                />
-            </div>
-            <div>
-                <label htmlFor="name">Email</label>
-                <input 
-                className="form-input"
-                onChange={handleChange}
-                type="email"
-                name="email"
-                value={formData.email}
-                placeholder="Email"
-                required
-                />
-            </div>
-            <div>
-                <label htmlFor="name">Message</label>
-                <textarea 
-                className="form-input"
-                onChange={handleChange}
-                type="text"
-                name="message"
-                value={formData.message}
-                placeholder="Message"
-                required 
-                minLength={3}
-                />
-            </div>
-
             <div>
                 <BasicButton text="Submit">Submit</BasicButton>
             </div>

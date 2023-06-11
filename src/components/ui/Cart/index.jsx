@@ -27,13 +27,13 @@ export default function Cart() {
         <div>
             {total > 0 ? (
                 <StyledCart>
-                    {location.pathname === "/Cart" ? (
+                    {location.pathname === "/cart" ? (
                         <div className="cart-wrapper">
                             {cartItems}
                             <div className="total"> Total : {FormatPrice(total)}</div>
                             <p className="shipping"> *Free shipping</p>
                             <Link to="/Checkout">
-                                <BasicButton>Checkout</BasicButton>
+                                <BasicButton>checkout</BasicButton>
                             </Link>
                         </div>
                     ) : (

@@ -16,10 +16,10 @@ export default function NavMenu() {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/Contact">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link to="/Cart">Cart</Link>
+                        <Link to="/cart">Cart</Link>
                     </li>
                 </ul>
             )}

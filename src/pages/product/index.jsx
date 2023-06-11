@@ -55,7 +55,7 @@ export default function ProductPage() {
                             Continue shopping
                         </BasicButton>
                     </Link>
-                    <Link to="/Cart">
+                    <Link to="/cart">
                         <AdvancedBtn
                         className="btn-secondary"
                         text="View Cart"

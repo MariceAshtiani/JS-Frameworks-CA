@@ -45,7 +45,11 @@ export default function Cart() {
                     )}
                 </StyledCart>
             ) : (
-                <h2>No items in the cart</h2>
+                <StyledCart>
+                    <div className="cartEmpty">
+                        <h2>No items in the cart</h2>
+                    </div>
+                </StyledCart>
             )}
         </div>
     );

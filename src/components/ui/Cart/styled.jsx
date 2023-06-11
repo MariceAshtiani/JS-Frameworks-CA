@@ -32,6 +32,10 @@ export default styled.div`
         align-items: right;
     }
 
+    .cartEmpty h2{
+        text-align: center;
+    }
+
     @media (max-width: ${({ theme }) => theme.mobile}) {
         .product-info {
             padding-bottom: 20px;

@@ -9,7 +9,7 @@ import { ShoppingCartContext } from "../../components/Context";
 import Price from "../../components/ui/Products/Price";
 import Review from "../../components/ui/Products/Reviews";
 import Rating from "../../components/ui/Products/Reviews/Rating";
-import ModalStyles, { secondModalStyle } from "../../styles/ModalStyles";
+import ModalStyles, { imageModalStyle } from "../../styles/ModalStyles";
 import BasicButton, { AdvancedBtn, SmallBtn } from "../../components/ui/Buttons/styled";
 import StyledProduct from "./styled";
 Modal.setAppElement("#root");
@@ -23,7 +23,7 @@ export default function ProductPage() {
     const url = `https://api.noroff.dev/api/v1/online-shop/${id}`;
     const { data, isLoading, isError } = ApiHook(url);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
+    const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
     if (isLoading || !data) {
         return <Loader />;
@@ -65,16 +65,16 @@ export default function ProductPage() {
                     </Link>
                 </div>
             </Modal>
-            <Modal isOpen={isSecondModalOpen} style={secondModalStyle}>
-                <div>
+            <Modal isOpen={isImageModalOpen} style={imageModalStyle}>
+                <div  className="modalImage">
                     <img src={data.imageUrl}></img>
                 </div>
-                <SmallBtn onClick={() => setIsSecondModalOpen(false)}>Close</SmallBtn>
+                <SmallBtn onClick={() => setIsImageModalOpen(false)}>Close</SmallBtn>
             </Modal>
             <div className="container">
                 <section className="mainContainer">
                     <div className="img-wrapper"
-                    onClick={() => setIsSecondModalOpen(true)}>
+                    onClick={() => setIsImageModalOpen(true)}>
                         <img src={data.imageUrl}></img>
                     </div>
                     <div className="productInfo">

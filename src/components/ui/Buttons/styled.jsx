@@ -29,7 +29,9 @@ export const SmallBtn = styled(AdvancedBtn)`
     color: white;
     border: 3px solid orange;
     padding: 5px 10px;
-    margin: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
 `;
 
 export default BasicButton;

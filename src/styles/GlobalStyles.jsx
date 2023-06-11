@@ -43,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-size: 3rem;
+        text-align: center;
     }
 
     p {

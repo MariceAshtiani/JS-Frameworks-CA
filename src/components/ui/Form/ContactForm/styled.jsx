@@ -6,7 +6,7 @@ export default styled.form`
     gap: 15px;
     width: 100%;
     max-width: 500px;
-    margin: auto;
+    margin: 0 auto;
     padding: 30px;
     box-shadow: 0px 0px 20px 5px rgba(246, 146, 7, 0.612);
     border-radius: 20px;
@@ -42,9 +42,12 @@ export default styled.form`
         border-radius: 10px;
     }
 
-    Button {
+    button {
         margin: 0 auto;
-        margin-top: 1rem;
+    }
+
+    .paymentButton {
+        margin: 0 auto;
     }
 
     .success {

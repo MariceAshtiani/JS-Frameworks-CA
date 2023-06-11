@@ -4,7 +4,7 @@ import ProductPage from "./pages/product";
 import CartPage from "./pages/cart";
 import CheckoutPage from "./pages/checkout";
 import ContactPage from "./pages/contact";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 
 export default function App() {
   return (

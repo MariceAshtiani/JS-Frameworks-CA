@@ -54,7 +54,21 @@ const GlobalStyle = createGlobalStyle`
         content: none;
     }
 
+    .checkoutContainer {
+        flex-direction: column;
+    }
 
+    .successContainer {
+        text-align: center;
+        max-width: 700px;
+        border: 2px solid orange;
+        border-radius: 20px;
+        min-height: 50vh;
+    }
+
+    .successContainer button, h2, p {
+        margin-top: 2rem;
+    }
 
     .mainContainer {
         display: flex;
@@ -84,6 +98,7 @@ const GlobalStyle = createGlobalStyle`
             font-size: 2.5rem;
             }
         }
+    }
    
 
         @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -95,7 +110,6 @@ const GlobalStyle = createGlobalStyle`
                 padding: 0;
             }
         }
-    }
 `;
 
 export default GlobalStyle;

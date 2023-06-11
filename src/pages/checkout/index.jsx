@@ -14,12 +14,11 @@ export default function CheckoutPage() {
         </HelmetProvider>
         <main>
             <h1>Checkout</h1>
-            <div className="mainContainer">
+            <div className="checkoutContainer">
                 <section>
                     <StyledHeader>
                         <h2>Order Confirmation</h2>
                     </StyledHeader>
-                    
                     <Cart />
                 </section>
                 <section>

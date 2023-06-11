@@ -1,6 +1,5 @@
 import CheckoutForm from "../../components/ui/Form/CheckoutForm";
 import Cart from "../../components/ui/Cart";
-import StyledHeader from "./styled";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -13,9 +12,7 @@ export default function CheckoutPage() {
             </Helmet>
         </HelmetProvider>
         <main>
-            <StyledHeader>
-                <h1>Checkout</h1>
-            </StyledHeader>
+            <h1>Checkout</h1>
             <div className="mainContainer">
                 <section>
                     <StyledHeader>

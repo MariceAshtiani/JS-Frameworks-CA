@@ -1,5 +1,4 @@
 import ContactForm from "../../components/ui/Form/ContactForm";
-import StyledHeadline from "./styled";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function ContactPage() {
@@ -11,9 +10,7 @@ export default function ContactPage() {
             </Helmet>
         </HelmetProvider>
         <main>
-            <StyledHeadline>
-                Contact 
-            </StyledHeadline>
+            <h1>Contact</h1>
             <div className="mainContainer">
                 <ContactForm />
             </div>
